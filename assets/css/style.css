@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.todo-list {
+  align-self: baseline;
+  margin: 5vh 0;
+  background-color: #0B2027;
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 300px;
+}
+
+.title {
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  color: #F6F1D1;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-button {
+  border: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+.form-button:hover {
+  color: #F6F1D1;
+  background: rgba(246, 241, 209, 0.1);
+}
+
+.form-input,
+.form-button,
+.load-button,
+.save-button {
+  background: #F6F1D1;
+  font-weight: 600;
+  width: 8rem;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.load-save {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.form-input {
+  outline: none;
+  width: 60%;
+}
+
+.form-input.input-failed {
+  position: relative;
+  box-shadow: inset 0px 0px 0px 5px #FF0000;
+}
+
+p {
+  display: grid;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+p.error-message {
+  text-decoration:underline red;
+}
+
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F6F1D1;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+  max-width: 18rem;
+}
+
+.check-button {
+  background-color: #F6F1D1;
+}
+
+.delete-button {
+  background-color: #DADBDD;
+}
+
+.check-button,
+.delete-button {
+  flex: 1 2 0;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+.content {
+  align-self: center;
+  margin: 0;
+  flex: 5;
+}
